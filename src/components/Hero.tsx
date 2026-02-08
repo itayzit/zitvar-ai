@@ -34,7 +34,7 @@ export default function Hero() {
           className="w-16 h-16 rounded-full object-cover"
         />
         <p
-          className="text-[16px] font-medium uppercase tracking-[0.15em] text-secondary"
+          className="text-[20px] font-medium uppercase tracking-[0.15em] text-secondary"
           style={{ fontFamily: "var(--font-sans)" }}
         >
           Itay Zitvar
@@ -51,17 +51,16 @@ export default function Hero() {
       </a>
 
       <h1
-        className="mt-4 md:mt-6 font-serif italic leading-[1.15]"
+        className="mt-4 md:mt-6 font-bold leading-[1.15]"
         style={{
-          fontSize: "clamp(32px, 5vw, 52px)",
-          fontFamily: "var(--font-serif)",
+          fontSize: "clamp(28px, 5vw, 44px)",
+          fontFamily: "var(--font-display)",
         }}
       >
         {displayedText}
         {showCursor && (
           <span
             className={typingDone ? "cursor-blink" : ""}
-            style={{ fontStyle: "normal" }}
           >
             |
           </span>

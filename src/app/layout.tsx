@@ -15,25 +15,17 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400"],
 });
 
-const instrumentSerif = localFont({
-  src: [
-    {
-      path: "../fonts/InstrumentSerif-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../fonts/InstrumentSerif-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-instrument-serif",
+const calSans = localFont({
+  src: "../fonts/CalSans-Regular.woff2",
+  variable: "--font-cal-sans",
 });
 
 export const metadata: Metadata = {
   title: "Itay Zitvar",
   description: "AI guy.",
+  icons: {
+    icon: "/profile.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -44,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} ${calSans.variable} antialiased`}
       >
         {children}
       </body>

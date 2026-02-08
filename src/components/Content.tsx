@@ -26,8 +26,8 @@ export default function Content() {
         />
         <div>
           <span
-            className="text-[20px] text-accent transition-all group-hover:underline group-hover:underline-offset-4"
-            style={{ fontFamily: "var(--font-serif)" }}
+            className="text-[20px] font-bold text-accent transition-all group-hover:underline group-hover:underline-offset-4"
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Itay AI
           </span>
@@ -41,7 +41,7 @@ export default function Content() {
         href="https://chat.whatsapp.com/Gp7LZgWA0eg9QD3rb5vGPn"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-3 inline-block text-[13px] text-accent hover:underline hover:underline-offset-4 transition-all"
+        className="mt-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/5 px-4 py-1.5 text-[13px] font-medium text-accent hover:bg-accent/10 transition-colors"
       >
         Join my private WhatsApp group
       </a>

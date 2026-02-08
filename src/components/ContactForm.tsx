@@ -33,7 +33,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
           transition={{ duration: 0.3 }}
         >
           <div
-            className="absolute inset-0 bg-[#F7F5F0]/90 backdrop-blur-sm"
+            className="absolute inset-0 bg-background/90 backdrop-blur-sm"
             onClick={onClose}
           />
 
@@ -62,8 +62,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
                 placeholder="Name"
                 className="w-full border-b border-rule bg-transparent pb-3 text-[16px] text-foreground placeholder:italic placeholder:text-secondary/60 focus:border-accent focus:outline-none transition-colors"
                 style={{
-                  fontFamily: "var(--font-serif)",
-                  fontStyle: "italic",
+                  fontFamily: "var(--font-display)",
                 }}
               />
             </div>
@@ -77,8 +76,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
                 placeholder="Email"
                 className="w-full border-b border-rule bg-transparent pb-3 text-[16px] text-foreground placeholder:italic placeholder:text-secondary/60 focus:border-accent focus:outline-none transition-colors"
                 style={{
-                  fontFamily: "var(--font-serif)",
-                  fontStyle: "italic",
+                  fontFamily: "var(--font-display)",
                 }}
               />
             </div>
@@ -92,8 +90,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
                 rows={3}
                 className="w-full resize-none border-b border-rule bg-transparent pb-3 text-[16px] text-foreground placeholder:italic placeholder:text-secondary/60 focus:border-accent focus:outline-none transition-colors"
                 style={{
-                  fontFamily: "var(--font-serif)",
-                  fontStyle: "italic",
+                  fontFamily: "var(--font-display)",
                 }}
               />
             </div>

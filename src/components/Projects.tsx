@@ -14,7 +14,7 @@ const projects = [
   {
     name: "1000Words",
     href: "https://1000words.co",
-    thumbnail: "/1000words.png",
+    thumbnail: "/1000words.jpg",
     description:
       "The feature Duolingo would take years to create — learn language through pictures",
   },
@@ -49,8 +49,8 @@ export default function Projects() {
             />
             <div>
               <span
-                className="text-[20px] text-accent transition-all group-hover:underline group-hover:underline-offset-4"
-                style={{ fontFamily: "var(--font-serif)" }}
+                className="text-[20px] font-bold text-accent transition-all group-hover:underline group-hover:underline-offset-4"
+                style={{ fontFamily: "var(--font-display)" }}
               >
                 {project.name}
               </span>
