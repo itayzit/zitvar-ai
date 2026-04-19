@@ -12,14 +12,26 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending" | "error">("idle");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log({ name, email, message });
-    setName("");
-    setEmail("");
-    setMessage("");
-    onClose();
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setStatus("idle");
+      onClose();
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -95,12 +107,20 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
               />
             </div>
 
-            <button
-              type="submit"
-              className="self-start text-[16px] text-accent underline underline-offset-4 hover:underline-offset-8 transition-all"
-            >
-              Send
-            </button>
+            <div className="flex items-center gap-4">
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="self-start text-[16px] text-accent underline underline-offset-4 hover:underline-offset-8 transition-all disabled:opacity-50"
+              >
+                {status === "sending" ? "Sending..." : "Send"}
+              </button>
+              {status === "error" && (
+                <span className="text-[14px] text-red-400">
+                  Failed to send, try again
+                </span>
+              )}
+            </div>
           </motion.form>
         </motion.div>
       )}
