@@ -34,10 +34,10 @@ export default function Hero() {
           className="w-16 h-16 rounded-full object-cover"
         />
         <p
-          className="text-[20px] font-medium uppercase tracking-[0.15em] text-secondary"
+          className="text-[16px] font-medium uppercase tracking-[0.12em] text-secondary whitespace-nowrap"
           style={{ fontFamily: "var(--font-sans)" }}
         >
-          Itay Zitvar
+          Itay Zitvar | Wharton | Nvidia | AI
         </p>
       </div>
 

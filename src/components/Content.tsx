@@ -41,7 +41,7 @@ export default function Content() {
         href="https://chat.whatsapp.com/Gp7LZgWA0eg9QD3rb5vGPn"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/5 px-4 py-1.5 text-[13px] font-medium text-accent hover:bg-accent/10 transition-colors"
+        className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-[13px] font-semibold text-background hover:opacity-90 transition-opacity shadow-sm"
       >
         Join my private WhatsApp group
       </a>
