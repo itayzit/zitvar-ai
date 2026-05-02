@@ -18,6 +18,13 @@ const projects = [
     description:
       "The feature Duolingo would take years to create — learn language through pictures",
   },
+  {
+    name: "ROIC Tree Generator",
+    href: "https://roic-tree-generator.vercel.app/",
+    thumbnail: "/roic-tree.svg",
+    description:
+      "Decompose any company's Return on Invested Capital into its drivers. Paste a ticker, get the full tree.",
+  },
 ];
 
 export default function Projects() {
@@ -45,6 +52,7 @@ export default function Projects() {
               alt={project.name}
               width={72}
               height={72}
+              unoptimized
               className="w-[72px] h-[72px] rounded-md object-cover flex-shrink-0 mt-0.5"
             />
             <div>

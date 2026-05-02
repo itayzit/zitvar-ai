@@ -37,7 +37,7 @@ export default function Content() {
         </div>
       </a>
 
-      <a
+      <
         href="https://chat.whatsapp.com/Gp7LZgWA0eg9QD3rb5vGPn"
         target="_blank"
         rel="noopener noreferrer"
