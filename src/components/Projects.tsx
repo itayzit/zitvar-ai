@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 const projects = [
@@ -39,13 +38,16 @@ export default function Projects() {
       </p>
 
       <div className="mt-3 flex flex-col gap-4">
-        {projects.map((project) => (
-          <a
+        {projects.map((project, i) => (
+          <motion.a
             key={project.name}
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-4 group"
+            className="flex items-start gap-4 group active:scale-[0.96] transition-transform"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 2.3 + i * 0.08 }}
           >
             <Image
               src={project.thumbnail}
@@ -53,7 +55,7 @@ export default function Projects() {
               width={72}
               height={72}
               unoptimized
-              className="w-[72px] h-[72px] rounded-md object-cover flex-shrink-0 mt-0.5"
+              className="w-[72px] h-[72px] rounded-md object-cover flex-shrink-0 mt-0.5 ring-1 ring-black/10"
             />
             <div>
               <span
@@ -66,7 +68,7 @@ export default function Projects() {
                 {project.description}
               </p>
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
 

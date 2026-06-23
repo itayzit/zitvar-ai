@@ -54,13 +54,13 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
             className="relative z-10 w-full max-w-[440px] mx-6 flex flex-col gap-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.3, delay: 0.1 }}
           >
             <button
               type="button"
               onClick={onClose}
-              className="self-end text-[14px] text-secondary hover:text-foreground transition-colors"
+              className="self-end text-[14px] text-secondary hover:text-foreground active:scale-[0.96] transition-[transform,color]"
             >
               close
             </button>
@@ -111,7 +111,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="self-start text-[16px] text-accent underline underline-offset-4 hover:underline-offset-8 transition-all disabled:opacity-50"
+                className="self-start text-[16px] text-accent underline underline-offset-4 hover:underline-offset-8 active:scale-[0.96] transition-[transform,text-underline-offset] disabled:opacity-50"
               >
                 {status === "sending" ? "Sending..." : "Send"}
               </button>

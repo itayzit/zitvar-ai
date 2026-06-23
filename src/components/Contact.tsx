@@ -17,10 +17,10 @@ export default function Contact() {
       >
         <button
           onClick={() => setIsFormOpen(true)}
-          className="group relative text-[16px] text-accent"
+          className="group relative text-[16px] text-accent active:scale-[0.96] transition-transform"
         >
           <span>Get in touch</span>
-          <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+          <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-[width] duration-300 group-hover:w-full" />
         </button>
       </motion.section>
 

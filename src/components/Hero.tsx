@@ -31,7 +31,7 @@ export default function Hero() {
         <img
           src="/profile.jpg"
           alt="Itay Zitvar"
-          className="w-16 h-16 rounded-full object-cover"
+          className="w-16 h-16 rounded-full object-cover ring-1 ring-black/10"
         />
         <p
           className="text-[16px] font-medium uppercase tracking-[0.12em] text-secondary whitespace-nowrap"
@@ -51,7 +51,7 @@ export default function Hero() {
       </a>
 
       <h1
-        className="mt-4 md:mt-6 font-bold leading-[1.15]"
+        className="mt-4 md:mt-6 font-bold leading-[1.15] text-balance"
         style={{
           fontSize: "clamp(28px, 5vw, 44px)",
           fontFamily: "var(--font-display)",
