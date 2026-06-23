@@ -14,7 +14,7 @@ export default function Content() {
       </p>
 
       <a
-        href="https://itay-ai.base44.app/"
+        href="https://itay-ai.base44.app/archive"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-5 flex items-start gap-4 group active:scale-[0.96] transition-transform"
