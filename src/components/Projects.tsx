@@ -22,7 +22,7 @@ const projects = [
     href: "https://roic-tree-generator.vercel.app/",
     thumbnail: "/roic-tree.svg",
     description:
-      "Decompose any company's Return on Invested Capital into its drivers. Paste a ticker, get the full tree.",
+      "Decompose any company's Return on Invested Capital into its drivers.",
   },
 ];
 
@@ -59,12 +59,12 @@ export default function Projects() {
             />
             <div>
               <span
-                className="text-[20px] font-bold text-accent transition-all group-hover:underline group-hover:underline-offset-4"
+                className="text-[17px] font-semibold text-foreground transition-[text-underline-offset] group-hover:underline group-hover:underline-offset-4"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 {project.name}
               </span>
-              <p className="mt-1 text-[15px] leading-relaxed text-foreground">
+              <p className="mt-0.5 text-[14px] leading-relaxed text-secondary">
                 {project.description}
               </p>
             </div>

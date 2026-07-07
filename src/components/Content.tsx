@@ -26,12 +26,12 @@ export default function Content() {
         />
         <div>
           <span
-            className="text-[20px] font-bold text-accent transition-all group-hover:underline group-hover:underline-offset-4"
+            className="text-[17px] font-semibold text-foreground transition-[text-underline-offset] group-hover:underline group-hover:underline-offset-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Itay AI
           </span>
-          <p className="mt-1 text-[15px] leading-relaxed text-foreground">
+          <p className="mt-0.5 text-[14px] leading-relaxed text-secondary">
             Absolutely no fluff. I write about papers, products and podcasts in the AI world.
           </p>
         </div>
