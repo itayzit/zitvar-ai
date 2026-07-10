@@ -18,6 +18,13 @@ const projects = [
       "The feature Duolingo would take years to create — learn language through pictures",
   },
   {
+    name: "Defluffer",
+    href: "https://itayzit.github.io/defluffer/",
+    thumbnail: "/defluffer.png",
+    description:
+      "A Chrome extension that turns long, AI-bloated LinkedIn posts into one line, as you scroll",
+  },
+  {
     name: "ROIC Tree Generator",
     href: "https://roic-tree-generator.vercel.app/",
     thumbnail: "/roic-tree.svg",
