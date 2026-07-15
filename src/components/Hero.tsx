@@ -50,22 +50,33 @@ export default function Hero() {
             ))}
           </div>
           <div className="mt-3 flex gap-4">
-            <a
-              href="https://www.linkedin.com/in/itayzitvar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
-            >
-              LinkedIn ↗
-            </a>
-            <a
-              href="https://x.com/itayzit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
-            >
-              X ↗
-            </a>
+            {[
+              { label: "LinkedIn", href: "https://www.linkedin.com/in/itayzitvar/" },
+              { label: "X", href: "https://x.com/itayzit" },
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+              >
+                {link.label}
+                <svg
+                  aria-hidden="true"
+                  width="11"
+                  height="11"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 9L9 3M4 3h5v5" />
+                </svg>
+              </a>
+            ))}
           </div>
         </div>
       </div>
