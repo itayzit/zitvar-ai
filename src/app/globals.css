@@ -1,20 +1,31 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #FAFAFA;
-  --color-foreground: #1A1A1A;
-  --color-secondary: #6B7280;
-  --color-accent: #1E3A5F;
-  --color-rule: #D1D5DB;
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-cal-sans);
-  --font-mono: var(--font-jetbrains-mono);
+  /* Soft Studio palette — off-white tinted toward the coral brand hue */
+  --color-background: #faf7f5;
+  --color-foreground: #2b2823;
+  --color-secondary: #6d675e;
+  --color-accent: #e0684b;
+  --color-rule: #e9e3dd;
+  --color-card-lilac: #eee9f4;
+  --color-card-sage: #e7efe4;
+  --color-card-peach: #f4e9e2;
+  --color-card-sky: #e5edf2;
+  --color-card-butter: #f2ecdd;
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-gabarito);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 @keyframes blink {
@@ -24,4 +35,10 @@ body {
 
 .cursor-blink {
   animation: blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink {
+    animation: none;
+  }
 }

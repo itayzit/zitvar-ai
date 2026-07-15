@@ -1,24 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
-import localFont from "next/font/local";
+import { Gabarito, Figtree } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const gabarito = Gabarito({
+  variable: "--font-gabarito",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "600", "700", "800"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
-  weight: ["400"],
-});
-
-const calSans = localFont({
-  src: "../fonts/CalSans-Regular.woff2",
-  variable: "--font-cal-sans",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} ${calSans.variable} antialiased`}
+        className={`${gabarito.variable} ${figtree.variable} antialiased`}
       >
         {children}
         <Analytics />

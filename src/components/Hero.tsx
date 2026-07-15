@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const tagline = "Some tagline about me";
@@ -26,53 +25,52 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-8 md:pt-10">
-      <div className="flex items-center gap-4">
+    <section>
+      <div className="flex items-center gap-6">
         <img
           src="/profile.jpg"
           alt="Itay Zitvar"
-          className="w-16 h-16 rounded-full object-cover ring-1 ring-black/10"
+          className="w-[88px] h-[88px] rounded-[32px] object-cover -rotate-3 shadow-[0_6px_20px_rgba(43,40,35,0.10)]"
         />
-        <p
-          className="text-[16px] font-medium uppercase tracking-[0.12em] text-secondary whitespace-nowrap"
-          style={{ fontFamily: "var(--font-sans)" }}
-        >
-          Itay Zitvar | Wharton | Nvidia | AI
-        </p>
+        <div>
+          <h2
+            className="text-[32px] md:text-[40px] font-extrabold tracking-[-0.02em] leading-none"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Itay Zitvar
+          </h2>
+          <div className="mt-2.5 flex gap-2">
+            {["Wharton", "Nvidia", "AI"].map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full bg-white px-3.5 py-1 text-[13px] font-semibold shadow-[0_1px_3px_rgba(43,40,35,0.08)]"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+          <a
+            href="https://www.linkedin.com/in/itayzitvar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
       </div>
 
-      <a
-        href="https://www.linkedin.com/in/itayzitvar/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-3 inline-block text-[13px] text-accent hover:underline hover:underline-offset-4 transition-all"
-      >
-        LinkedIn
-      </a>
-
       <h1
-        className="mt-4 md:mt-6 font-bold leading-[1.15] text-balance"
+        className="mt-12 font-bold leading-[1.15] tracking-[-0.02em] text-balance max-w-[16ch]"
         style={{
-          fontSize: "clamp(28px, 5vw, 44px)",
+          fontSize: "clamp(32px, 5.5vw, 40px)",
           fontFamily: "var(--font-display)",
         }}
       >
         {displayedText}
-        {showCursor && (
-          <span
-            className={typingDone ? "cursor-blink" : ""}
-          >
-            |
-          </span>
-        )}
+        {typingDone && <span className="text-accent">.</span>}
+        {showCursor && <span className={typingDone ? "cursor-blink" : ""}>|</span>}
       </h1>
-
-      <motion.div
-        className="mt-4 md:mt-6 h-px bg-rule"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        transition={{ duration: 0.8, delay: 1.8, ease: "easeOut" }}
-      />
     </section>
   );
 }

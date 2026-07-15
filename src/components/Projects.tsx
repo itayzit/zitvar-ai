@@ -9,6 +9,7 @@ const projects = [
     href: "https://thank-you-gpt.com",
     thumbnail: "/thank-you-gpt.png",
     description: "A thank you note generator for ivy league MBA students",
+    tint: "bg-card-lilac",
   },
   {
     name: "1000Words",
@@ -16,6 +17,7 @@ const projects = [
     thumbnail: "/1000words.jpg",
     description:
       "The feature Duolingo would take years to create — learn language through pictures",
+    tint: "bg-card-sage",
   },
   {
     name: "Defluffer",
@@ -23,68 +25,67 @@ const projects = [
     thumbnail: "/defluffer.png",
     description:
       "A Chrome extension that turns long, AI-bloated LinkedIn posts into one line, as you scroll",
+    tint: "bg-card-peach",
   },
   {
     name: "ROIC Tree Generator",
     href: "https://roic-tree-generator.vercel.app/",
     thumbnail: "/roic-tree.svg",
     description:
-      "Decompose any company's Return on Invested Capital into its drivers.",
+      "Decompose any company's Return on Invested Capital into its drivers",
+    tint: "bg-card-sky",
   },
 ];
 
 export default function Projects() {
   return (
     <motion.section
+      className="mt-16"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 2.2 }}
+      transition={{ duration: 0.6, delay: 1.0 }}
     >
-      <p className="text-[12px] font-medium uppercase tracking-[0.2em] text-secondary">
+      <h2
+        className="text-[15px] font-bold uppercase tracking-[0.14em] text-secondary"
+        style={{ fontFamily: "var(--font-display)" }}
+      >
         Projects
-      </p>
+      </h2>
 
-      <div className="mt-3 flex flex-col gap-4">
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         {projects.map((project, i) => (
           <motion.a
             key={project.name}
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-4 group active:scale-[0.96] transition-transform"
+            className={`${project.tint} flex flex-col gap-3.5 rounded-[22px] p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(43,40,35,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 2.3 + i * 0.08 }}
+            transition={{ duration: 0.4, delay: 1.1 + i * 0.08 }}
           >
             <Image
               src={project.thumbnail}
-              alt={project.name}
-              width={72}
-              height={72}
+              alt=""
+              width={52}
+              height={52}
               unoptimized
-              className="w-[72px] h-[72px] rounded-md object-cover flex-shrink-0 mt-0.5 ring-1 ring-black/10"
+              className="w-[52px] h-[52px] rounded-[14px] object-cover"
             />
             <div>
-              <span
-                className="text-[17px] font-semibold text-foreground transition-[text-underline-offset] group-hover:underline group-hover:underline-offset-4"
+              <h3
+                className="text-[20px] font-bold tracking-[-0.01em]"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 {project.name}
-              </span>
-              <p className="mt-0.5 text-[14px] leading-relaxed text-secondary">
+              </h3>
+              <p className="mt-1 text-[14px] leading-relaxed text-secondary">
                 {project.description}
               </p>
             </div>
           </motion.a>
         ))}
       </div>
-
-      <motion.div
-        className="mt-6 h-px bg-rule"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        transition={{ duration: 0.8, delay: 2.6, ease: "easeOut" }}
-      />
     </motion.section>
   );
 }
