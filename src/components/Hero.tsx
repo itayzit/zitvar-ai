@@ -30,7 +30,7 @@ export default function Hero() {
         <img
           src="/profile.jpg"
           alt="Itay Zitvar"
-          className="w-[88px] h-[88px] rounded-[32px] object-cover -rotate-3 shadow-[0_6px_20px_rgba(43,40,35,0.10)]"
+          className="w-[88px] h-[88px] rounded-[32px] object-cover shadow-[0_6px_20px_rgba(43,40,35,0.10)]"
         />
         <div>
           <h2
@@ -49,14 +49,24 @@ export default function Hero() {
               </span>
             ))}
           </div>
-          <a
-            href="https://www.linkedin.com/in/itayzitvar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-block text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
-          >
-            LinkedIn ↗
-          </a>
+          <div className="mt-3 flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/itayzitvar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+            >
+              LinkedIn ↗
+            </a>
+            <a
+              href="https://x.com/itayzit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+            >
+              X ↗
+            </a>
+          </div>
         </div>
       </div>
 
