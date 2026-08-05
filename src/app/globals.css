@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Soft Studio palette — off-white tinted toward the coral brand hue */
-  --color-background: #faf7f5;
-  --color-foreground: #2b2823;
-  --color-secondary: #6d675e;
-  --color-accent: #e0684b;
-  --color-rule: #e9e3dd;
+  /* Soft Studio palette — cool off-white ground, cobalt accent */
+  --color-background: #f7f8fa;
+  --color-foreground: #22242a;
+  --color-secondary: #5f6470;
+  --color-accent: #2f52e0;
+  --color-rule: #e3e5ea;
   --color-card-lilac: #eee9f4;
   --color-card-sage: #e7efe4;
   --color-card-peach: #f4e9e2;

@@ -59,7 +59,7 @@ export default function Projects() {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${project.tint} flex flex-col gap-3.5 rounded-[22px] p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(43,40,35,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
+            className={`${project.tint} flex flex-col gap-3.5 rounded-[22px] p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(34,36,42,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.1 + i * 0.08 }}

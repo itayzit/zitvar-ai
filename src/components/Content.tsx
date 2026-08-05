@@ -21,7 +21,7 @@ export default function Content() {
         href="https://itay-ai.base44.app/archive"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 flex items-center gap-5 rounded-[22px] bg-card-butter p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(43,40,35,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+        className="mt-4 flex items-center gap-5 rounded-[22px] bg-card-butter p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(34,36,42,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
       >
         <img
           src="/itay-ai.jpg"
@@ -46,7 +46,7 @@ export default function Content() {
         href="https://chat.whatsapp.com/Gp7LZgWA0eg9QD3rb5vGPn"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-5 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-[16px] font-bold text-white shadow-[0_6px_18px_rgba(224,104,75,0.30)] transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(224,104,75,0.35)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+        className="mt-5 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-[16px] font-bold text-white shadow-[0_6px_18px_rgba(47,82,224,0.30)] transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(47,82,224,0.35)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
         style={{ fontFamily: "var(--font-display)" }}
       >
         Join my private WhatsApp group →

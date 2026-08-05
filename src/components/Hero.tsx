@@ -30,7 +30,7 @@ export default function Hero() {
         <img
           src="/profile.jpg"
           alt="Itay Zitvar"
-          className="w-[88px] h-[88px] rounded-[32px] object-cover object-top shadow-[0_6px_20px_rgba(43,40,35,0.10)]"
+          className="w-[88px] h-[88px] rounded-[32px] object-cover object-top shadow-[0_6px_20px_rgba(34,36,42,0.10)]"
         />
         <div>
           <h2
@@ -43,7 +43,7 @@ export default function Hero() {
             {["Wharton", "Nvidia", "AI"].map((chip) => (
               <span
                 key={chip}
-                className="rounded-full bg-white px-3.5 py-1 text-[13px] font-semibold shadow-[0_1px_3px_rgba(43,40,35,0.08)]"
+                className="rounded-full bg-white px-3.5 py-1 text-[13px] font-semibold shadow-[0_1px_3px_rgba(34,36,42,0.08)]"
               >
                 {chip}
               </span>
