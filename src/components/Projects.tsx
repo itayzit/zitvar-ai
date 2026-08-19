@@ -5,27 +5,12 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "ThankYouGPT",
-    href: "https://thank-you-gpt.com",
-    thumbnail: "/thank-you-gpt.png",
-    description: "A thank you note generator for ivy league MBA students",
-    tint: "bg-card-lilac",
-  },
-  {
-    name: "1000Words",
-    href: "https://1000words.co",
-    thumbnail: "/1000words.jpg",
-    description:
-      "The feature Duolingo would take years to create — learn language through pictures",
-    tint: "bg-card-sage",
-  },
-  {
     name: "Defluffer",
     href: "https://itayzit.github.io/defluffer/",
     thumbnail: "/defluffer.png",
     description:
       "A Chrome extension that turns long, AI-bloated LinkedIn posts into one line, as you scroll",
-    tint: "bg-card-peach",
+    tint: "bg-card-lilac",
   },
   {
     name: "ROIC Tree Generator",
@@ -33,6 +18,21 @@ const projects = [
     thumbnail: "/roic-tree.svg",
     description:
       "Decompose any company's Return on Invested Capital into its drivers",
+    tint: "bg-card-sage",
+  },
+  {
+    name: "ThankYouGPT",
+    href: "https://thank-you-gpt.com",
+    thumbnail: "/thank-you-gpt.png",
+    description: "A thank you note generator for ivy league MBA students",
+    tint: "bg-card-peach",
+  },
+  {
+    name: "1000Words",
+    href: "https://1000words.co",
+    thumbnail: "/1000words.jpg",
+    description:
+      "The feature Duolingo would take years to create — learn language through pictures",
     tint: "bg-card-sky",
   },
 ];
