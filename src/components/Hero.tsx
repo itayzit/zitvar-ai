@@ -40,7 +40,7 @@ export default function Hero() {
             Itay Zitvar
           </h2>
           <div className="mt-2.5 flex gap-2">
-            {["Wharton", "Nvidia", "AI"].map((chip) => (
+            {["Nvidia", "Wharton", "AI"].map((chip) => (
               <span
                 key={chip}
                 className="rounded-full bg-white px-3.5 py-1 text-[13px] font-semibold shadow-[0_1px_3px_rgba(34,36,42,0.08)]"
@@ -49,6 +49,9 @@ export default function Hero() {
               </span>
             ))}
           </div>
+          <p className="mt-2.5 text-[15px] text-secondary">
+            I work on model routing and inference optimization.
+          </p>
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
             <a
               href="https://x.com/itayzit"

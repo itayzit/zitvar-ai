@@ -10,7 +10,7 @@ const personJsonLd = {
   url: "https://www.zitvar.ai",
   image: "https://www.zitvar.ai/profile.jpg",
   description:
-    "Wharton MBA, worked at Nvidia. Builds AI products and writes about AI.",
+    "Works at Nvidia on model routing and inference optimization. Wharton MBA. Builds AI products and writes about AI.",
   sameAs: [
     "https://x.com/itayzit",
     "https://www.linkedin.com/in/itayzitvar/",

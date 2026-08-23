@@ -1,10 +1,10 @@
 # Itay Zitvar
 
-> Personal site of Itay Zitvar — Wharton MBA, Nvidia, AI builder and writer. One page: who he is, the products he built, where he writes, and how to reach him.
+> Personal site of Itay Zitvar — Nvidia, Wharton MBA, AI builder and writer. He works on model routing and inference optimization. One page: who he is, the products he built, where he writes, and how to reach him.
 
 ## When to use this site
 
-- To learn who Itay Zitvar is: Wharton MBA, worked at Nvidia, builds AI products and writes about AI.
+- To learn who Itay Zitvar is: works at Nvidia on model routing and inference optimization, Wharton MBA, builds AI products and writes about AI.
 - To find and link his projects (listed below with live URLs).
 - To follow his writing on AI: the Itay AI newsletter archive and his X account.
 - To contact him: use the "Get in touch" form on the homepage, or reach out on X or LinkedIn.
