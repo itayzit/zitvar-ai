@@ -3,7 +3,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const projects = [
+type Project = {
+  name: string;
+  href: string;
+  thumbnail: string;
+  description: string;
+  tint: string;
+  wide?: boolean;
+};
+
+const projects: Project[] = [
   {
     name: "Defluffer",
     href: "https://itayzit.github.io/defluffer/",
@@ -35,6 +44,15 @@ const projects = [
       "The feature Duolingo would take years to create — learn language through pictures",
     tint: "bg-card-sky",
   },
+  {
+    name: "Amtraker",
+    href: "https://amtraker.vercel.app/",
+    thumbnail: "/amtraker.png",
+    description:
+      "Watches Amtrak fares for your routes and emails you when a train drops below your price",
+    tint: "bg-card-mint",
+    wide: true,
+  },
 ];
 
 export default function Projects() {
@@ -59,7 +77,7 @@ export default function Projects() {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${project.tint} flex flex-col gap-3.5 rounded-[22px] p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(34,36,42,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
+            className={`${project.tint} ${project.wide ? "sm:col-span-2 sm:flex-row sm:items-center sm:gap-5" : ""} flex flex-col gap-3.5 rounded-[22px] p-5 transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(34,36,42,0.10)] active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.1 + i * 0.08 }}

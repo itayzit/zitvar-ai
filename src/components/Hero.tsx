@@ -49,34 +49,45 @@ export default function Hero() {
               </span>
             ))}
           </div>
-          <div className="mt-3 flex gap-4">
-            {[
-              { label: "LinkedIn", href: "https://www.linkedin.com/in/itayzitvar/" },
-              { label: "X", href: "https://x.com/itayzit" },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+          <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <a
+              href="https://x.com/itayzit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-foreground px-3.5 py-1.5 text-[13px] font-semibold text-background shadow-[0_2px_8px_rgba(34,36,42,0.18)] transition-[transform,box-shadow] duration-150 ease-out hover:-translate-y-0.5 hover:shadow-[0_5px_14px_rgba(34,36,42,0.22)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            >
+              <svg
+                aria-hidden="true"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
               >
-                {link.label}
-                <svg
-                  aria-hidden="true"
-                  width="11"
-                  height="11"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 9L9 3M4 3h5v5" />
-                </svg>
-              </a>
-            ))}
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              Follow me on X
+            </a>
+            <a
+              href="https://www.linkedin.com/in/itayzitvar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[14px] font-semibold text-accent hover:underline hover:underline-offset-4"
+            >
+              LinkedIn
+              <svg
+                aria-hidden="true"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M3 9L9 3M4 3h5v5" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
