@@ -30,6 +30,15 @@ const projects: Project[] = [
     tint: "bg-card-sage",
   },
   {
+    name: "Amtraker",
+    href: "https://amtraker.vercel.app/",
+    thumbnail: "/amtraker.png",
+    description:
+      "Watches Amtrak fares for your routes and emails you when a train drops below your price",
+    tint: "bg-card-mint",
+    wide: true,
+  },
+  {
     name: "ThankYouGPT",
     href: "https://thank-you-gpt.com",
     thumbnail: "/thank-you-gpt.png",
@@ -43,15 +52,6 @@ const projects: Project[] = [
     description:
       "The feature Duolingo would take years to create — learn language through pictures",
     tint: "bg-card-sky",
-  },
-  {
-    name: "Amtraker",
-    href: "https://amtraker.vercel.app/",
-    thumbnail: "/amtraker.png",
-    description:
-      "Watches Amtrak fares for your routes and emails you when a train drops below your price",
-    tint: "bg-card-mint",
-    wide: true,
   },
 ];
 
