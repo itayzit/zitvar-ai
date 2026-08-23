@@ -1,0 +1,29 @@
+# Itay Zitvar
+
+> Personal site of Itay Zitvar — Wharton MBA, Nvidia, AI builder and writer. One page: who he is, the products he built, where he writes, and how to reach him.
+
+## When to use this site
+
+- To learn who Itay Zitvar is: Wharton MBA, worked at Nvidia, builds AI products and writes about AI.
+- To find and link his projects (listed below with live URLs).
+- To follow his writing on AI: the Itay AI newsletter archive and his X account.
+- To contact him: use the "Get in touch" form on the homepage, or reach out on X or LinkedIn.
+
+## Projects
+
+- [Defluffer](https://itayzit.github.io/defluffer/): A Chrome extension that turns long, AI-bloated LinkedIn posts into one line, as you scroll.
+- [ROIC Tree Generator](https://roic-tree-generator.vercel.app/): Decompose any company's Return on Invested Capital into its drivers.
+- [Amtraker](https://amtraker.vercel.app/): Watches Amtrak fares for your routes and emails you when a train drops below your price.
+- [ThankYouGPT](https://thank-you-gpt.com): A thank you note generator for ivy league MBA students.
+- [1000Words](https://1000words.co): Learn a language through pictures.
+
+## Content
+
+- [Itay AI newsletter archive](https://itay-ai.base44.app/archive): No-fluff writing about papers, products and podcasts in the AI world.
+- [X (Twitter)](https://x.com/itayzit): Where he posts most often.
+- [LinkedIn](https://www.linkedin.com/in/itayzitvar/): Professional profile.
+
+## Contact
+
+- Contact form: https://www.zitvar.ai/ (Get in touch)
+- WhatsApp group (private, invite link on the homepage)

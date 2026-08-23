@@ -99,9 +99,14 @@ export default function Hero() {
           fontFamily: "var(--font-display)",
         }}
       >
-        {displayedText}
-        {typingDone && <span className="text-accent">.</span>}
-        {showCursor && <span className={typingDone ? "cursor-blink" : ""}>|</span>}
+        <span className="sr-only">{tagline}.</span>
+        <span aria-hidden="true">
+          {displayedText}
+          {typingDone && <span className="text-accent">.</span>}
+          {showCursor && (
+            <span className={typingDone ? "cursor-blink" : ""}>|</span>
+          )}
+        </span>
       </h1>
     </section>
   );
