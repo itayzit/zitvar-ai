@@ -16,8 +16,36 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.zitvar.ai"),
   title: "Itay Zitvar",
   description: "AI guy.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Itay Zitvar",
+    title: "Itay Zitvar",
+    description:
+      "Wharton MBA, Nvidia, AI. Projects and no-fluff AI writing.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Itay Zitvar — Wharton, Nvidia, AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@itayzit",
+    title: "Itay Zitvar",
+    description:
+      "Wharton MBA, Nvidia, AI. Projects and no-fluff AI writing.",
+    images: ["/og.png"],
+  },
   icons: {
     icon: "/profile.jpg",
   },
